@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  text-decoration: none;
+}
+
+.fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.2;
+  z-index: -9;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  background: url(images/bg-pattern-intro-mobile.svg), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background: url(images/bg-pattern-intro-mobile.svg), linear-gradient(#ff8f70, #ff3d54);
+  background-position: 35% 34%;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 6em;
+  padding: 3.2em 1.5em;
+}
+
+main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .logo img {
+  width: 5em;
+}
+
+main header nav ul {
+  width: 90%;
+  height: 80vh;
+  position: absolute;
+  background-color: #bebcbc;
+  top: 6em;
+  left: 1em;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header nav ul li {
+  list-style: none;
+}
+
+main header nav ul li a {
+  display: inline-block;
+  padding: 1em 2em;
+  color: #1f3f5b;
+  font-weight: 600;
+}
+
+main header .log {
+  display: none;
+}
+
+main .main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 6.6em;
+}
+
+main .main__container h1 {
+  font-weight: 600;
+  color: white;
+}
+
+main .main__container p {
+  margin: 1em 0 2.2em;
+  color: white;
+  font-size: 1.1rem;
+}
+
+main .main__container .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1em;
+}
+
+main .main__container .botones .main--btn1 {
+  display: inline-block;
+  color: #ff525d;
+  font-weight: 600;
+  background-color: white;
+  padding: .8em 1.5em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+main .main__container .botones .main--btn2 {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  border: 1px solid white;
+  padding: .8em 1.5em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.editor {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.7em;
+}
+
+.editor h2 {
+  margin: 3.9em 0 1.8em;
+  font-size: 1.54rem;
+}
+
+.editor img {
+  width: 125%;
+}
+
+.editor .designed-text {
+  margin-top: 3em;
+}
+
+.editor .designed-text h3 {
+  font-size: 1.68rem;
+  margin-bottom: .6em;
+}
+
+.editor .designed-text p {
+  line-height: 1.6;
+}
+
+.editor .text2 h3 {
+  margin-bottom: .8em;
+}
+
+.art {
+  margin-top: 16.5em;
+  width: 100%;
+  height: 94vh;
+  background: url(images/bg-pattern-circles.svg), -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background: url(images/bg-pattern-circles.svg), linear-gradient(#2c2d3f, #3f4164);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-top-right-radius: 6em;
+  border-bottom-left-radius: 6em;
+  padding: 0 1.5em;
+}
+
+.art .img--celu {
+  width: 100%;
+  height: 23em;
+  background: url(images/illustration-phones.svg);
+  background-size: 118%;
+  background-position: center;
+  -webkit-transform: translateY(-11em);
+          transform: translateY(-11em);
+}
+
+.art .art__container {
+  text-align: center;
+  margin-top: -9.4em;
+}
+
+.art .art__container h2 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: .8em;
+}
+
+.art .art__container p {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.free {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.7em;
+  margin-top: 3.5em;
+}
+
+.free img {
+  width: 155%;
+}
+
+.free .designed-text {
+  margin-top: 3em;
+}
+
+.free .designed-text h3 {
+  font-size: 1.68rem;
+  margin-bottom: .6em;
+}
+
+.free .designed-text p {
+  line-height: 1.6;
+}
+
+.free .text2 h3 {
+  margin-bottom: .8em;
+}
+
+footer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #25252d;
+  margin-top: 6em;
+  border-top-right-radius: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer img {
+  margin: 4em 0 4em;
+}
+
+footer .foot {
+  text-align: center;
+}
+
+footer .foot h4 {
+  font-size: 1.1rem;
+  color: white;
+}
+
+footer .foot ul {
+  margin: 1.5em 0 3em;
+}
+
+footer .foot ul li {
+  list-style: none;
+}
+
+footer .foot ul li a {
+  font-size: 1.1rem;
+  color: #c8c8cb;
+  display: inline-block;
+  margin: .2em 0;
+}
+/*# sourceMappingURL=estilos.css.map */

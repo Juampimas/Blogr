@@ -1,0 +1,23 @@
+main {
+  height: 90vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(#ff8f70, #ff3d54);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 0 0 0 200px;
+}
+
+main h1 {
+  font-family: "Overpass", sans-serif;
+  font-size: 45px;
+}
+/*# sourceMappingURL=main.css.map */
